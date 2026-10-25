@@ -1,336 +1,1771 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaik Anjum - Software Development & Automation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Shaik Anjum — ML Engineer &amp; Data Science Developer</title>
+<meta name="description" content="Portfolio of Shaik Anjum — B.Tech CSE (Data Science) student at G. Pulla Reddy Engineering College, building end-to-end ML solutions."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
+<!-- ═══════════════════════════════════════════════════════════
+     SVG SPRITE — sparkle · arrow-ne · arrow-se · copy · check · diamond
+     ═══════════════════════════════════════════════════════════ -->
+<svg style="display:none" aria-hidden="true" focusable="false">
+  <symbol id="ic-sparkle" viewBox="0 0 24 24">
+    <path d="M12 2 L13.4 9.6 L21 12 L13.4 14.4 L12 22 L10.6 14.4 L3 12 L10.6 9.6 Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="ic-arrow-ne" viewBox="0 0 24 24">
+    <path d="M7 17 L17 7 M17 7 H8 M17 7 V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+  <symbol id="ic-arrow-se" viewBox="0 0 24 24">
+    <path d="M7 7 L17 17 M17 17 H8 M17 17 V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+  <symbol id="ic-copy" viewBox="0 0 24 24">
+    <rect x="9" y="9" width="11" height="11" rx="2.5" stroke="currentColor" stroke-width="1.8" fill="none"/>
+    <path d="M5 15V6a2 2 0 0 1 2-2h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  </symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24">
+    <path d="M5 12l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+  <symbol id="ic-diamond" viewBox="0 0 12 12">
+    <path d="M6 1 L11 6 L6 11 L1 6 Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="ic-trophy" viewBox="0 0 24 24">
+    <path d="M8 21h8M12 17v4M5 3H3a2 2 0 0 0-2 2v2a4 4 0 0 0 4 4M19 3h2a2 2 0 0 1 2 2v2a4 4 0 0 1-4 4M12 17A7 7 0 0 1 5 10V3h14v7a7 7 0 0 1-7 7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+  <symbol id="ic-code" viewBox="0 0 24 24">
+    <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+  <symbol id="ic-heart" viewBox="0 0 24 24">
+    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="ic-github" viewBox="0 0 24 24">
+    <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.7.115 2.5.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10z" fill="currentColor"/>
+  </symbol>
+  <symbol id="ic-linkedin" viewBox="0 0 24 24">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"/>
+  </symbol>
+  <symbol id="ic-mail" viewBox="0 0 24 24">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.77 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.68 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="ic-arrow-up" viewBox="0 0 24 24">
+    <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+</svg>
+
+<style>
+/* ════════════════════════════════════════════════════════════
+   DESIGN TOKENS
+   ════════════════════════════════════════════════════════════ */
+:root {
+  --bg:      #0D0605;
+  --text:    #FFF6EF;
+  --muted:   #CDB3A6;
+  --orange:  #F26A1B;
+  --lo:      #FF9157;
+  --grad:    linear-gradient(135deg,#E0510D,#BE3D07);
+  --hair:    rgba(255,255,255,.12);
+  --ohair:   rgba(255,138,72,.30);
+  --panel:   rgba(26,12,8,.74);
+  --pb:      rgba(255,128,64,.34);
+  --r:       22px;
+}
+
+/* ════════════════════════════════════════════════════════════
+   RESET
+   ════════════════════════════════════════════════════════════ */
+*,*::before,*::after { box-sizing:border-box; }
+html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body {
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:'Inter','Segoe UI',system-ui,sans-serif;
+  font-weight:300; line-height:1.65; overflow-x:hidden;
+  min-height:100vh;
+}
+h1,h2,h3,h4,h5 { font-family:'Antonio',sans-serif; font-weight:400; margin:0; letter-spacing:-.01em; }
+p { margin:0; }
+a { color:inherit; }
+img,svg { display:block; }
+ul { list-style:none; margin:0; padding:0; }
+button { font-family:inherit; cursor:pointer; }
+::selection { background:rgba(242,106,27,.35); }
+:focus-visible { outline:2px solid var(--orange); outline-offset:3px; border-radius:6px; }
+
+/* Skip link */
+.skip {
+  position:fixed; top:-80px; left:14px; z-index:400;
+  padding:10px 18px; border-radius:10px;
+  background:#1a0c08; border:1px solid var(--pb);
+  color:var(--text); text-decoration:none; font-weight:500;
+  transition:top .2s;
+}
+.skip:focus { top:14px; }
+
+/* ════════════════════════════════════════════════════════════
+   BACKGROUND LAYERS
+   Layer 1 — base colour on <body>
+   Layer 2 — two blurred corner gradients (.bg-gradients)
+   Layer 3 — sparse explicit-circle speckles (.bg-stars)
+   ════════════════════════════════════════════════════════════ */
+
+/* Shared wrapper */
+.bg-layers {
+  position:fixed; inset:0; z-index:0;
+  pointer-events:none; overflow:hidden;
+}
+
+/* ── Layer 2: corner light bands ─────────────────
+   Two radial gradients, corners only.
+   Centre stays near-black.                        */
+.bg-gradients {
+  position:absolute; inset:0;
+  background:
+    radial-gradient(60% 45% at 100% 0%,   rgba(242,106,27,.55), transparent 70%),
+    radial-gradient(55% 45% at   0% 100%, rgba(224,81,13,.50),  transparent 70%);
+}
+
+/* ── Layer 3: speckle tiles ──────────────────────
+   Two explicit-<circle> SVG tiles, hard-coded
+   positions, radius 0.5–1 px, opacity 0.35–0.9.
+   No filters, no noise, no blend modes.
+   Both tiles stacked via background-image shorthand.
+   Tile A: 400×400, 55 circles (~1% fill)
+   Tile B: 270×270, 40 circles (~1% fill)           */
+.bg-stars {
+  position:absolute; inset:0;
+  /* Tile B on top, Tile A underneath */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='270' height='270'%3E%3Ccircle cx='12' cy='18' r='0.8' fill='white' opacity='0.72'/%3E%3Ccircle cx='34' cy='7' r='0.6' fill='white' opacity='0.50'/%3E%3Ccircle cx='61' cy='23' r='1.0' fill='white' opacity='0.85'/%3E%3Ccircle cx='88' cy='11' r='0.7' fill='white' opacity='0.42'/%3E%3Ccircle cx='110' cy='31' r='0.9' fill='white' opacity='0.68'/%3E%3Ccircle cx='143' cy='5' r='0.5' fill='white' opacity='0.55'/%3E%3Ccircle cx='167' cy='19' r='0.8' fill='white' opacity='0.80'/%3E%3Ccircle cx='198' cy='8' r='0.6' fill='white' opacity='0.38'/%3E%3Ccircle cx='224' cy='27' r='1.0' fill='white' opacity='0.90'/%3E%3Ccircle cx='252' cy='14' r='0.7' fill='white' opacity='0.60'/%3E%3Ccircle cx='7' cy='55' r='0.9' fill='white' opacity='0.47'/%3E%3Ccircle cx='39' cy='48' r='0.5' fill='white' opacity='0.75'/%3E%3Ccircle cx='74' cy='62' r='0.8' fill='white' opacity='0.55'/%3E%3Ccircle cx='102' cy='44' r='0.6' fill='white' opacity='0.88'/%3E%3Ccircle cx='130' cy='58' r='1.0' fill='white' opacity='0.40'/%3E%3Ccircle cx='157' cy='51' r='0.7' fill='white' opacity='0.65'/%3E%3Ccircle cx='185' cy='67' r='0.9' fill='white' opacity='0.78'/%3E%3Ccircle cx='213' cy='42' r='0.5' fill='white' opacity='0.52'/%3E%3Ccircle cx='241' cy='59' r='0.8' fill='white' opacity='0.83'/%3E%3Ccircle cx='263' cy='49' r='0.6' fill='white' opacity='0.45'/%3E%3Ccircle cx='21' cy='96' r='1.0' fill='white' opacity='0.70'/%3E%3Ccircle cx='55' cy='88' r='0.7' fill='white' opacity='0.36'/%3E%3Ccircle cx='83' cy='105' r='0.5' fill='white' opacity='0.87'/%3E%3Ccircle cx='117' cy='92' r='0.9' fill='white' opacity='0.58'/%3E%3Ccircle cx='148' cy='110' r='0.6' fill='white' opacity='0.74'/%3E%3Ccircle cx='176' cy='83' r='0.8' fill='white' opacity='0.43'/%3E%3Ccircle cx='207' cy='99' r='1.0' fill='white' opacity='0.90'/%3E%3Ccircle cx='234' cy='115' r='0.7' fill='white' opacity='0.62'/%3E%3Ccircle cx='258' cy='88' r='0.5' fill='white' opacity='0.48'/%3E%3Ccircle cx='9' cy='140' r='0.8' fill='white' opacity='0.80'/%3E%3Ccircle cx='44' cy='132' r='0.6' fill='white' opacity='0.55'/%3E%3Ccircle cx='71' cy='148' r='1.0' fill='white' opacity='0.38'/%3E%3Ccircle cx='99' cy='135' r='0.7' fill='white' opacity='0.72'/%3E%3Ccircle cx='128' cy='153' r='0.9' fill='white' opacity='0.85'/%3E%3Ccircle cx='159' cy='140' r='0.5' fill='white' opacity='0.50'/%3E%3Ccircle cx='191' cy='158' r='0.8' fill='white' opacity='0.68'/%3E%3Ccircle cx='219' cy='130' r='0.6' fill='white' opacity='0.42'/%3E%3Ccircle cx='247' cy='147' r='1.0' fill='white' opacity='0.76'/%3E%3Ccircle cx='16' cy='188' r='0.7' fill='white' opacity='0.60'/%3E%3Ccircle cx='49' cy='202' r='0.9' fill='white' opacity='0.47'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Ccircle cx='8' cy='14' r='0.7' fill='white' opacity='0.60'/%3E%3Ccircle cx='29' cy='31' r='1.0' fill='white' opacity='0.82'/%3E%3Ccircle cx='55' cy='9' r='0.6' fill='white' opacity='0.45'/%3E%3Ccircle cx='78' cy='44' r='0.8' fill='white' opacity='0.70'/%3E%3Ccircle cx='103' cy='18' r='0.5' fill='white' opacity='0.88'/%3E%3Ccircle cx='131' cy='37' r='0.9' fill='white' opacity='0.52'/%3E%3Ccircle cx='158' cy='12' r='0.7' fill='white' opacity='0.76'/%3E%3Ccircle cx='184' cy='49' r='1.0' fill='white' opacity='0.40'/%3E%3Ccircle cx='211' cy='22' r='0.6' fill='white' opacity='0.65'/%3E%3Ccircle cx='239' cy='38' r='0.8' fill='white' opacity='0.90'/%3E%3Ccircle cx='266' cy='7' r='0.5' fill='white' opacity='0.55'/%3E%3Ccircle cx='292' cy='31' r='0.9' fill='white' opacity='0.72'/%3E%3Ccircle cx='318' cy='16' r='0.7' fill='white' opacity='0.47'/%3E%3Ccircle cx='345' cy='43' r='1.0' fill='white' opacity='0.85'/%3E%3Ccircle cx='371' cy='25' r='0.6' fill='white' opacity='0.38'/%3E%3Ccircle cx='393' cy='11' r='0.8' fill='white' opacity='0.68'/%3E%3Ccircle cx='14' cy='72' r='0.9' fill='white' opacity='0.80'/%3E%3Ccircle cx='42' cy='88' r='0.5' fill='white' opacity='0.50'/%3E%3Ccircle cx='69' cy='61' r='0.8' fill='white' opacity='0.75'/%3E%3Ccircle cx='96' cy='79' r='0.7' fill='white' opacity='0.43'/%3E%3Ccircle cx='124' cy='93' r='1.0' fill='white' opacity='0.87'/%3E%3Ccircle cx='150' cy='67' r='0.6' fill='white' opacity='0.58'/%3E%3Ccircle cx='178' cy='84' r='0.9' fill='white' opacity='0.36'/%3E%3Ccircle cx='205' cy='71' r='0.5' fill='white' opacity='0.74'/%3E%3Ccircle cx='231' cy='95' r='0.8' fill='white' opacity='0.62'/%3E%3Ccircle cx='258' cy='78' r='0.7' fill='white' opacity='0.48'/%3E%3Ccircle cx='284' cy='90' r='1.0' fill='white' opacity='0.90'/%3E%3Ccircle cx='311' cy='63' r='0.6' fill='white' opacity='0.55'/%3E%3Ccircle cx='337' cy='86' r='0.8' fill='white' opacity='0.78'/%3E%3Ccircle cx='362' cy='72' r='0.9' fill='white' opacity='0.42'/%3E%3Ccircle cx='388' cy='58' r='0.5' fill='white' opacity='0.83'/%3E%3Ccircle cx='7' cy='124' r='0.8' fill='white' opacity='0.65'/%3E%3Ccircle cx='35' cy='138' r='0.6' fill='white' opacity='0.50'/%3E%3Ccircle cx='63' cy='117' r='1.0' fill='white' opacity='0.85'/%3E%3Ccircle cx='91' cy='143' r='0.7' fill='white' opacity='0.40'/%3E%3Ccircle cx='119' cy='128' r='0.9' fill='white' opacity='0.72'/%3E%3Ccircle cx='146' cy='152' r='0.5' fill='white' opacity='0.60'/%3E%3Ccircle cx='174' cy='119' r='0.8' fill='white' opacity='0.88'/%3E%3Ccircle cx='201' cy='145' r='0.6' fill='white' opacity='0.47'/%3E%3Ccircle cx='228' cy='131' r='1.0' fill='white' opacity='0.76'/%3E%3Ccircle cx='255' cy='148' r='0.7' fill='white' opacity='0.55'/%3E%3Ccircle cx='282' cy='122' r='0.9' fill='white' opacity='0.38'/%3E%3Ccircle cx='308' cy='140' r='0.5' fill='white' opacity='0.80'/%3E%3Ccircle cx='335' cy='115' r='0.8' fill='white' opacity='0.68'/%3E%3Ccircle cx='361' cy='137' r='0.6' fill='white' opacity='0.52'/%3E%3Ccircle cx='387' cy='125' r='1.0' fill='white' opacity='0.90'/%3E%3Ccircle cx='18' cy='178' r='0.7' fill='white' opacity='0.45'/%3E%3Ccircle cx='47' cy='192' r='0.9' fill='white' opacity='0.70'/%3E%3Ccircle cx='76' cy='168' r='0.5' fill='white' opacity='0.83'/%3E%3Ccircle cx='105' cy='186' r='0.8' fill='white' opacity='0.58'/%3E%3Ccircle cx='133' cy='174' r='0.6' fill='white' opacity='0.36'/%3E%3Ccircle cx='161' cy='196' r='1.0' fill='white' opacity='0.74'/%3E%3Ccircle cx='189' cy='161' r='0.7' fill='white' opacity='0.87'/%3E%3Ccircle cx='216' cy='183' r='0.9' fill='white' opacity='0.50'/%3E%3Ccircle cx='243' cy='170' r='0.5' fill='white' opacity='0.62'/%3E%3Ccircle cx='270' cy='194' r='0.8' fill='white' opacity='0.78'/%3E%3C/svg%3E");
+  background-size: 270px 270px, 400px 400px;
+  background-repeat: repeat, repeat;
+}
+
+/* ════════════════════════════════════════════════════════════
+   LAYOUT WRAPPERS
+   ════════════════════════════════════════════════════════════ */
+.wrap {
+  width:100%; max-width:1240px; margin:0 auto;
+  padding:0 clamp(16px,4.5vw,56px);
+  padding-left:max(clamp(16px,4.5vw,56px),env(safe-area-inset-left));
+  padding-right:max(clamp(16px,4.5vw,56px),env(safe-area-inset-right));
+}
+.main { position:relative; z-index:1; }
+section { scroll-margin-top:78px; }
+
+/* ════════════════════════════════════════════════════════════
+   PANEL
+   ════════════════════════════════════════════════════════════ */
+.panel {
+  background:var(--panel);
+  -webkit-backdrop-filter:blur(14px);
+  backdrop-filter:blur(14px);
+  border:1px solid var(--pb);
+  border-radius:var(--r);
+}
+
+/* ════════════════════════════════════════════════════════════
+   TYPOGRAPHY HELPERS
+   ════════════════════════════════════════════════════════════ */
+.antonio { font-family:'Antonio',sans-serif; }
+
+.label-tag {
+  display:inline-flex; align-items:center; gap:7px;
+  font-family:'Antonio',sans-serif; font-weight:300; font-size:.78rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--muted);
+}
+.label-tag svg { width:14px; height:14px; }
+
+.section-head {
+  display:flex; align-items:center; gap:12px;
+  margin-bottom:clamp(18px,3vw,30px);
+}
+.section-head__sp { color:var(--orange); width:16px; height:16px; flex:0 0 auto; }
+.section-head__label {
+  font-family:'Antonio',sans-serif; font-weight:300; font-size:.76rem;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--orange);
+}
+.section-head__line {
+  flex:1; height:1px;
+  background:linear-gradient(to right,var(--ohair),transparent);
+}
+
+.section-title {
+  font-family:'Antonio',sans-serif; font-weight:400;
+  font-size:clamp(2.5rem,6vw,4.8rem);
+  line-height:1.0; letter-spacing:-.02em;
+  margin-bottom:clamp(32px,5vw,56px);
+}
+
+.grad-text {
+  background:linear-gradient(135deg,var(--orange),var(--lo));
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.chip {
+  display:inline-flex; align-items:center;
+  padding:5px 13px; border-radius:999px;
+  border:1px solid var(--ohair);
+  font-family:'Inter',sans-serif; font-size:.78rem; font-weight:400;
+  color:var(--muted); white-space:nowrap;
+}
+
+/* ════════════════════════════════════════════════════════════
+   BUTTONS
+   ════════════════════════════════════════════════════════════ */
+.btn {
+  display:inline-flex; align-items:center; gap:9px;
+  padding:13px 22px; border-radius:999px;
+  font-family:'Inter',sans-serif; font-size:.92rem; font-weight:500;
+  text-decoration:none; cursor:pointer; border:none;
+  transition:transform .22s,box-shadow .22s,opacity .22s;
+  white-space:nowrap;
+}
+.btn--orange {
+  background:var(--grad); color:#fff;
+  box-shadow:0 10px 32px -12px rgba(224,81,13,.65);
+}
+.btn--orange:hover { transform:translateY(-2px); box-shadow:0 16px 40px -12px rgba(224,81,13,.85); }
+.btn--outline {
+  background:transparent; color:var(--text);
+  border:1px solid var(--hair);
+}
+.btn--outline:hover { border-color:var(--orange); color:var(--orange); }
+.btn__icon {
+  width:28px; height:28px; border-radius:50%;
+  background:#fff; display:grid; place-items:center; flex:0 0 auto;
+}
+.btn__icon svg { width:15px; height:15px; color:#0D0605; }
+
+/* ════════════════════════════════════════════════════════════
+   HEADER  — sticky, blurred, hairline bottom
+   ════════════════════════════════════════════════════════════ */
+.hdr {
+  position:sticky; top:0; z-index:100;
+  border-bottom:1px solid var(--hair);
+  -webkit-backdrop-filter:blur(20px) saturate(150%);
+  backdrop-filter:blur(20px) saturate(150%);
+  background:rgba(13,6,5,.76);
+}
+.hdr__inner {
+  display:flex; align-items:center; justify-content:space-between;
+  gap:14px; padding:14px 0; flex-wrap:wrap;
+}
+.hdr__logo {
+  font-family:'Antonio',sans-serif; font-weight:500;
+  font-size:1.15rem; letter-spacing:.1em; text-transform:uppercase;
+  text-decoration:none; color:var(--text); white-space:nowrap;
+}
+/* Pill nav */
+.hdr__nav {
+  display:flex; align-items:center; gap:4px;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--hair); border-radius:999px;
+  padding:5px; flex-wrap:wrap;
+  overflow-x:auto; -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.hdr__nav::-webkit-scrollbar { display:none; }
+.hdr__nav a {
+  font-family:'Inter',sans-serif; font-size:.84rem; font-weight:400;
+  text-decoration:none; color:var(--muted);
+  padding:7px 15px; border-radius:999px;
+  transition:color .2s,background .2s; white-space:nowrap;
+}
+.hdr__nav a:hover { color:var(--text); }
+.hdr__nav a.is-active {
+  background:#fff; color:#0D0605; font-weight:500;
+}
+@media(max-width:680px) {
+  .hdr__nav { order:3; width:100%; justify-content:flex-start; }
+  .hdr__inner { padding-bottom:10px; }
+}
+@media(max-width:380px) { .hdr__logo { font-size:.98rem; } }
+
+/* ════════════════════════════════════════════════════════════
+   HERO
+   ════════════════════════════════════════════════════════════ */
+.hero {
+  position:relative; overflow:hidden;
+  padding-top:clamp(64px,12vw,110px);
+  min-height:clamp(480px,80vh,920px);
+  display:flex; flex-direction:column;
+}
+/* hero__glow removed — background is handled by .bg-gradients */
+.hero__name-wrap {
+  position:relative; z-index:1; text-align:center;
+  padding:0 clamp(16px,4vw,48px);
+}
+.hero__hi {
+  font-family:'Antonio',sans-serif; font-weight:300;
+  font-size:clamp(.9rem,2vw,1.4rem);
+  letter-spacing:.15em; color:var(--muted); text-transform:uppercase;
+  margin-bottom:6px;
+}
+.hero__name {
+  font-family:'Antonio',sans-serif; font-weight:700;
+  font-size:clamp(4.4rem,18.5vw,15.5rem);
+  line-height:.84; letter-spacing:-.03em;
+  background:linear-gradient(180deg,#FFF6EF 28%,transparent 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-transform:uppercase; user-select:none;
+}
+/* Optional portrait slot — hidden until a photo is placed */
+.hero__portrait {
+  position:absolute; left:50%; bottom:0;
+  transform:translateX(-50%);
+  width:clamp(220px,32vw,460px); height:115%;
+  z-index:2; pointer-events:none; display:none;
+  -webkit-mask-image:linear-gradient(to top,transparent 0%,#000 26%,#000 100%);
+  mask-image:linear-gradient(to top,transparent 0%,#000 26%,#000 100%);
+  overflow:hidden;
+}
+.hero__portrait img { width:100%; height:100%; object-fit:cover; object-position:top center; }
+
+/* Hero bottom row */
+.hero__bottom {
+  position:relative; z-index:3;
+  display:flex; align-items:flex-end; justify-content:space-between;
+  gap:clamp(20px,4vw,52px); flex-wrap:wrap;
+  padding:clamp(40px,8vw,84px) clamp(16px,4vw,52px) clamp(32px,5vw,60px);
+  margin-top:auto;
+}
+.hero__left { display:flex; flex-direction:column; gap:18px; max-width:560px; }
+.hero__sparkle-tag {
+  display:inline-flex; align-items:center; gap:7px;
+  font-family:'Antonio',sans-serif; font-weight:300; font-size:.8rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--muted);
+}
+.hero__sparkle-tag svg { width:14px; height:14px; color:var(--orange); }
+.hero__tagline {
+  font-family:'Antonio',sans-serif; font-weight:400;
+  font-size:clamp(1.6rem,3.5vw,3.3rem);
+  line-height:1.08; letter-spacing:-.02em; color:var(--text);
+}
+.hero__btns { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+.hero__viewlink {
+  font-family:'Inter',sans-serif; font-size:.9rem;
+  color:var(--muted); text-decoration:none;
+  display:inline-flex; align-items:center; gap:6px;
+}
+.hero__viewlink:hover { color:var(--text); }
+.hero__viewlink svg { width:14px; height:14px; }
+
+/* Hero glass card */
+.hero__card {
+  flex:0 1 auto; min-width:228px; max-width:306px;
+  padding:22px; border-radius:20px;
+  background:linear-gradient(135deg,rgba(242,106,27,.28) 0%,rgba(13,6,5,.88) 100%);
+  border:1px solid var(--pb);
+  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+  display:flex; flex-direction:column; gap:14px;
+}
+.hero__card__top { display:flex; align-items:center; justify-content:space-between; }
+.hero__cgpa {
+  font-family:'Antonio',sans-serif; font-weight:700;
+  font-size:3.3rem; line-height:1; color:var(--text);
+}
+.hero__cgpa small {
+  font-size:1rem; font-weight:300; color:var(--muted);
+  letter-spacing:.06em; margin-left:4px;
+}
+.hero__card__arrow {
+  width:44px; height:44px; border-radius:50%;
+  border:1px solid var(--hair); display:grid; place-items:center;
+}
+.hero__card__arrow svg { width:20px; height:20px; color:var(--text); }
+.hero__card p { font-size:.82rem; color:var(--muted); line-height:1.55; }
+.hero__chips { display:flex; flex-wrap:wrap; gap:7px; }
+
+/* ════════════════════════════════════════════════════════════
+   TICKER
+   ════════════════════════════════════════════════════════════ */
+.ticker {
+  position:relative; overflow:hidden;
+  border-top:1px solid var(--ohair);
+  border-bottom:1px solid var(--ohair);
+  padding:15px 0;
+}
+.ticker::before,.ticker::after {
+  content:''; position:absolute; top:0; bottom:0; width:90px; z-index:2; pointer-events:none;
+}
+.ticker::before { left:0; background:linear-gradient(to right,var(--bg),transparent); }
+.ticker::after  { right:0; background:linear-gradient(to left,var(--bg),transparent); }
+.ticker__track {
+  display:flex; align-items:center;
+  width:max-content;
+  animation:ticker-scroll 42s linear infinite;
+}
+.ticker__track:hover { animation-play-state:paused; }
+.ticker__item {
+  display:flex; align-items:center; gap:22px; padding:0 24px;
+  font-family:'Antonio',sans-serif; font-weight:300;
+  font-size:.95rem; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--muted); white-space:nowrap;
+}
+.ticker__sp { color:var(--orange); width:14px; height:14px; }
+@keyframes ticker-scroll {
+  0%   { transform:translateX(0); }
+  100% { transform:translateX(-50%); }
+}
+@media (prefers-reduced-motion:reduce) {
+  .ticker__track { animation:none; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   COMMON SECTION SPACING
+   ════════════════════════════════════════════════════════════ */
+.section { padding:clamp(64px,10vw,112px) 0; }
+
+/* ════════════════════════════════════════════════════════════
+   ABOUT
+   ════════════════════════════════════════════════════════════ */
+/* 12-column decorative columns behind the content */
+.about__columns {
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:clamp(6px,1.6vw,26px);
+  pointer-events:none;
+  height:clamp(60px,10vw,110px);
+  margin-bottom:clamp(32px,6vw,60px);
+}
+.about__col {
+  border:1px solid var(--ohair);
+  border-radius:16px 16px 0 0;
+  background:linear-gradient(180deg,rgba(255,255,255,.03) 0%,rgba(242,106,27,.18) 100%);
+}
+@media(max-width:600px) {
+  .about__columns { grid-template-columns:repeat(6,1fr); }
+  .about__col:nth-child(n+7) { display:none; }
+}
+
+/* Top row: circle-arrow + title & right-aligned description */
+.about__toprow {
+  display:flex; align-items:flex-start; justify-content:space-between;
+  gap:24px; flex-wrap:wrap; margin-bottom:clamp(32px,5vw,52px);
+}
+.about__toprow__left { display:flex; align-items:center; gap:14px; }
+.about__circle-arrow {
+  width:52px; height:52px; border-radius:50%;
+  border:1px solid var(--ohair); display:grid; place-items:center;
+  color:var(--orange); flex:0 0 auto;
+}
+.about__circle-arrow svg { width:24px; height:24px; }
+.about__circle-label {
+  font-family:'Antonio',sans-serif; font-weight:500;
+  font-size:1.3rem; letter-spacing:.04em; color:var(--text);
+}
+.about__toprow__right {
+  font-family:'Inter',sans-serif; font-size:.92rem; font-weight:300;
+  color:var(--muted); max-width:34ch; text-align:right; line-height:1.6;
+}
+.about__toprow__right strong { color:var(--text); font-weight:500; }
+
+/* Content grid */
+.about__grid {
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:clamp(24px,4vw,56px);
+  align-items:start;
+}
+@media(max-width:700px) { .about__grid { grid-template-columns:1fr; } }
+.about__side__label {
+  font-family:'Antonio',sans-serif; font-weight:300;
+  font-size:.72rem; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--orange); margin-bottom:12px; white-space:nowrap;
+}
+.about__para {
+  font-family:'Antonio',sans-serif; font-weight:300;
+  font-size:clamp(1.55rem,3vw,2.85rem);
+  line-height:1.1; letter-spacing:-.015em; color:var(--text);
+  margin-bottom:26px; text-indent:2.4em;
+}
+.about__desc {
+  font-family:'Inter',sans-serif; font-size:1rem; font-weight:300;
+  color:var(--muted); line-height:1.7; margin-bottom:8px;
+}
+.about__desc strong { color:var(--text); font-weight:500; }
+.about__btns { display:flex; gap:12px; flex-wrap:wrap; margin-top:22px; }
+
+/* ════════════════════════════════════════════════════════════
+   PROJECTS
+   ════════════════════════════════════════════════════════════ */
+.projects__featured { margin-bottom:20px; }
+.case { padding:clamp(22px,3vw,38px); }
+.case__tags { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+.case__title {
+  font-family:'Antonio',sans-serif; font-weight:400;
+  font-size:clamp(1.9rem,4vw,3.5rem);
+  line-height:1.0; letter-spacing:-.025em; margin-bottom:14px;
+}
+.case__summary {
+  font-family:'Inter',sans-serif; font-size:1.04rem;
+  color:var(--muted); max-width:74ch; margin-bottom:30px; line-height:1.7;
+}
+
+/* 6-step pipeline */
+.pipeline {
+  display:grid; gap:10px;
+  grid-template-columns:repeat(2,1fr);
+  margin-bottom:30px;
+}
+@media(min-width:560px)  { .pipeline { grid-template-columns:repeat(3,1fr); } }
+@media(min-width:900px)  { .pipeline { grid-template-columns:repeat(6,1fr); } }
+.pipe-step {
+  padding:16px 14px; border-radius:14px;
+  background:rgba(255,255,255,.04); border:1px solid var(--hair);
+}
+.pipe-step__n {
+  font-family:'Antonio',sans-serif; font-weight:300; font-size:.7rem;
+  letter-spacing:.14em; color:var(--orange); margin-bottom:5px; text-transform:uppercase;
+}
+.pipe-step__title {
+  font-family:'Antonio',sans-serif; font-weight:500; font-size:1.05rem; margin-bottom:4px;
+}
+.pipe-step__desc { font-size:.8rem; color:var(--muted); line-height:1.5; }
+
+/* 3 sub-panels */
+.case__panels { display:grid; gap:12px; }
+@media(min-width:760px) { .case__panels { grid-template-columns:1.15fr 1fr .9fr; } }
+.case-panel {
+  padding:18px 20px; border-radius:16px;
+  background:rgba(255,255,255,.04); border:1px solid var(--hair);
+}
+.case-panel h4 {
+  font-family:'Antonio',sans-serif; font-weight:400;
+  font-size:1.06rem; margin-bottom:12px; color:var(--lo);
+}
+.ear-formula {
+  font-family:'Courier New',Courier,monospace;
+  font-size:.86rem; color:var(--text); margin-bottom:8px;
+  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+}
+.ear__frac {
+  display:inline-flex; flex-direction:column; align-items:center; font-size:.82rem;
+}
+.ear__num { padding:0 6px 3px; white-space:nowrap; }
+.ear__den { padding:3px 6px 0; border-top:1px solid var(--text); white-space:nowrap; }
+.case-panel p,.case-panel li { font-size:.84rem; color:var(--muted); line-height:1.55; }
+.resp-list,.spec-list { display:flex; flex-direction:column; gap:8px; }
+.resp-list li { display:grid; grid-template-columns:60px 1fr; gap:8px; }
+.resp-label {
+  font-family:'Antonio',sans-serif; font-weight:300; font-size:.62rem;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--orange); padding-top:2px;
+}
+.spec-list li { display:grid; grid-template-columns:80px 1fr; gap:8px; }
+.spec-key {
+  font-size:.74rem; color:var(--orange); font-weight:500;
+  text-transform:uppercase; letter-spacing:.06em; padding-top:1px;
+}
+
+/* Two smaller project cards */
+.proj-row { display:grid; gap:16px; }
+@media(min-width:700px) { .proj-row { grid-template-columns:1fr 1fr; } }
+.proj {
+  padding:22px 24px; display:flex; flex-direction:column; gap:11px;
+}
+.proj__badge {
+  display:inline-flex; align-items:center; gap:6px;
+  font-family:'Antonio',sans-serif; font-weight:300;
+  font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;
+  padding:5px 11px; border-radius:999px;
+  background:rgba(242,106,27,.18); color:var(--orange);
+  border:1px solid rgba(242,106,27,.30); align-self:flex-start;
+}
+.proj__badge svg { width:13px; height:13px; }
+.proj__title {
+  font-family:'Antonio',sans-serif; font-weight:400;
+  font-size:clamp(1.5rem,2.8vw,2.1rem); line-height:1.05; letter-spacing:-.02em;
+}
+.proj__desc { font-size:.9rem; color:var(--muted); line-height:1.65; }
+.proj__bullets { display:flex; flex-direction:column; gap:7px; margin-top:4px; }
+.proj__bullets li {
+  display:flex; align-items:flex-start; gap:9px;
+  font-size:.86rem; color:var(--muted); line-height:1.5;
+}
+.proj__bullets .dia { color:var(--orange); width:10px; height:10px; flex:0 0 auto; margin-top:4px; }
+.proj__chips { display:flex; flex-wrap:wrap; gap:7px; margin-top:6px; }
+.proj__link {
+  margin-top:auto; color:var(--orange);
+  font-size:.84rem; font-weight:500; text-decoration:none;
+  display:inline-flex; align-items:center; gap:5px;
+}
+.proj__link:hover { color:var(--lo); }
+.proj__link svg { width:13px; height:13px; }
+
+/* ════════════════════════════════════════════════════════════
+   EXPERIENCE & EDUCATION — vertical timelines
+   ════════════════════════════════════════════════════════════ */
+.exp__grid { display:grid; gap:20px; }
+@media(min-width:780px) { .exp__grid { grid-template-columns:1fr 1fr; } }
+.tl-panel { padding:24px 26px; }
+.tl-panel__h {
+  font-family:'Antonio',sans-serif; font-weight:300; font-size:.74rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--orange); margin-bottom:22px;
+}
+.tl { position:relative; padding-left:26px; }
+.tl::before {
+  content:''; position:absolute; left:5px; top:4px; bottom:4px;
+  width:1px; background:var(--ohair);
+}
+.tl__item { position:relative; margin-bottom:24px; }
+.tl__item:last-child { margin-bottom:0; }
+.tl__diamond {
+  position:absolute; left:-26px; top:14px;
+  width:12px; height:12px;
+  background:var(--orange); transform:rotate(45deg);
+  box-shadow:0 0 10px rgba(242,106,27,.5);
+}
+.tl__date {
+  font-family:'Antonio',sans-serif; font-weight:300;
+  font-size:.67rem; letter-spacing:.15em; text-transform:uppercase;
+  color:var(--orange); margin-bottom:5px;
+}
+.tl__card { padding:14px 16px; border-radius:14px; }
+.tl__title {
+  font-family:'Antonio',sans-serif; font-weight:500; font-size:1.1rem; margin-bottom:3px;
+}
+.tl__org { font-size:.86rem; color:var(--muted); margin-bottom:7px; }
+.tl__desc { font-size:.84rem; color:var(--muted); line-height:1.6; }
+.tl__pill {
+  display:inline-flex; margin-top:9px;
+  padding:4px 12px; border-radius:999px;
+  border:1px solid var(--ohair);
+  font-family:'Antonio',sans-serif; font-weight:300;
+  font-size:.76rem; letter-spacing:.1em; color:var(--orange);
+}
+
+/* ════════════════════════════════════════════════════════════
+   SKILLS — TWO SCROLLING LOGO ROWS
+   Structure per row:
+     .sk-row-wrap   overflow:hidden, edge-fade mask
+       .sk-track    display:flex, width:max-content, animated
+         .sk-set    ul, items × 2 inside (makes set > widest screen)
+         .sk-set[aria-hidden]  exact copy
+   ════════════════════════════════════════════════════════════ */
+
+/* Clip + edge fade */
+.sk-row-wrap {
+  position:relative;
+  overflow:hidden;
+  -webkit-mask-image:linear-gradient(
+    to right, transparent 0%, #000 8%, #000 92%, transparent 100%
+  );
+  mask-image:linear-gradient(
+    to right, transparent 0%, #000 8%, #000 92%, transparent 100%
+  );
+}
+.sk-row-wrap + .sk-row-wrap { margin-top:28px; }
+
+/* One animated flex track — contains both .sk-set siblings inline */
+.sk-track {
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  width:max-content;
+  /* no gap here — gap lives inside .sk-set so the two sets join seamlessly */
+}
+
+/* The item list — repeated twice inside each set to fill width */
+.sk-set {
+  display:flex;
+  flex-wrap:nowrap;
+  align-items:center;
+  gap:clamp(24px,3.5vw,56px);
+  padding:16px clamp(12px,1.5vw,28px);
+  list-style:none;
+  margin:0;
+}
+
+/* Row 1 → items scroll left-to-right on screen */
+.sk-track--ltr { animation:sk-ltr 35s linear infinite; }
+/* Row 2 → items scroll right-to-left on screen */
+.sk-track--rtl { animation:sk-rtl 35s linear infinite; }
+
+@keyframes sk-ltr {
+  0%   { transform:translateX(-50%); }
+  100% { transform:translateX(0);    }
+}
+@keyframes sk-rtl {
+  0%   { transform:translateX(0);    }
+  100% { transform:translateX(-50%); }
+}
+
+/* Pause on hover / focus-within */
+.sk-row-wrap:hover .sk-track,
+.sk-row-wrap:focus-within .sk-track { animation-play-state:paused; }
+
+/* ── Reduced motion: slow down but keep moving; static grid as fallback ── */
+@media(prefers-reduced-motion:reduce) {
+  /* Still scroll, just very slowly so it's non-jarring */
+  .sk-track--ltr { animation-duration:120s; }
+  .sk-track--rtl { animation-duration:120s; }
+}
+
+/* ── Each skill item ──────────────────────────────────────── */
+.sk-item {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px;
+  width:140px;          /* even spacing */
+  height:110px;         /* fixed: 60px logo + 10px gap + ~26px label + slack */
+  flex:0 0 140px;
+  cursor:default;
+  --brand:#F26A1B;
+  transition:transform .22s, filter .22s;
+}
+.sk-item:hover,
+.sk-item:focus-visible {
+  transform:scale(1.1);
+  outline:none;
+}
+.sk-item:hover .sk-logo-img,
+.sk-item:hover .sk-ico,
+.sk-item:hover .sk-logo-svg,
+.sk-item:focus-visible .sk-logo-img,
+.sk-item:focus-visible .sk-ico,
+.sk-item:focus-visible .sk-logo-svg {
+  filter:drop-shadow(0 0 8px var(--brand));
+}
+
+/* img logos — 60px tall, no box */
+.sk-logo-img {
+  height:60px;
+  width:auto;
+  display:block;
+  flex:0 0 auto;
+}
+@media(max-width:600px) { .sk-logo-img { height:46px; } }
+
+/* inline SVG icons — 60px square, no box */
+.sk-logo-svg,
+.sk-ico {
+  width:60px;
+  height:60px;
+  flex:0 0 auto;
+  display:block;
+}
+.sk-ico { color:var(--brand); }
+@media(max-width:600px) {
+  .sk-logo-svg, .sk-ico { width:46px; height:46px; }
+}
+
+/* Name label */
+.sk-name {
+  font-family:'Inter',sans-serif;
+  font-weight:500;
+  font-size:15px;
+  color:var(--text);
+  white-space:nowrap;
+  text-align:center;
+  line-height:1.3;
+}
+/* "(basics)" suffix — same line, muted, smaller */
+.sk-basics {
+  font-weight:400;
+  font-size:12px;
+  color:var(--muted);
+  margin-left:4px;
+}
+
+/* Power BI text-only fallback */
+.sk-powerbi-text {
+  font-family:'Antonio',sans-serif;
+  font-weight:500;
+  font-size:22px;
+  color:#F2C811;
+  height:60px;
+  display:flex;
+  align-items:center;
+  flex:0 0 auto;
+  letter-spacing:.04em;
+}
+@media(max-width:600px) { .sk-powerbi-text { font-size:17px; height:46px; } }
+
+/* Working style line */
+.sk-working {
+  font-family:'Inter',sans-serif;
+  font-size:.82rem;
+  font-weight:300;
+  color:var(--muted);
+  margin-top:28px;
+  letter-spacing:.02em;
+}
+
+/* ── Reduced motion: keep scrolling slowly; hide aria-hidden clone in static view ── */
+@media(prefers-reduced-motion:reduce) {
+  .sk-track--ltr,
+  .sk-track--rtl { animation-duration:150s !important; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   RECOGNITION
+   ════════════════════════════════════════════════════════════ */
+.recog__grid { display:grid; gap:16px; }
+@media(min-width:700px) { .recog__grid { grid-template-columns:repeat(3,1fr); } }
+.recog__card {
+  padding:22px 24px; display:flex; flex-direction:column; gap:11px;
+  transition:transform .25s;
+}
+.recog__card:hover { transform:translateY(-5px); }
+.recog__ic {
+  width:46px; height:46px; border-radius:12px;
+  background:rgba(242,106,27,.14); border:1px solid rgba(242,106,27,.3);
+  display:grid; place-items:center; color:var(--orange);
+}
+.recog__ic svg { width:24px; height:24px; }
+.recog__card h4 {
+  font-family:'Antonio',sans-serif; font-weight:400;
+  font-size:1.2rem; line-height:1.1;
+}
+.recog__card p { font-size:.86rem; color:var(--muted); line-height:1.6; }
+
+/* ════════════════════════════════════════════════════════════
+   CONTACT
+   ════════════════════════════════════════════════════════════ */
+.contact__headline {
+  font-family:'Antonio',sans-serif; font-weight:300;
+  font-size:clamp(2rem,5.5vw,4.5rem);
+  line-height:1.04; letter-spacing:-.02em;
+  margin-bottom:clamp(32px,5vw,52px); max-width:22ch;
+}
+.contact__card { padding:clamp(22px,3vw,40px); }
+.contact__list { display:flex; flex-direction:column; gap:12px; margin-bottom:24px; }
+.contact__row {
+  display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px;
+  padding:13px 16px; border-radius:13px;
+  background:rgba(255,255,255,.04); border:1px solid var(--hair);
+}
+.contact__k {
+  font-family:'Inter',sans-serif; font-size:.64rem;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--muted); width:64px; flex:0 0 auto;
+}
+.contact__v { font-size:.97rem; font-weight:400; word-break:break-word; }
+.copy-btn {
+  margin-left:auto;
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 13px; border-radius:999px;
+  background:transparent; border:1px solid var(--hair);
+  color:var(--text); font-size:.76rem;
+  transition:color .2s,border-color .2s;
+}
+.copy-btn:hover { border-color:var(--orange); color:var(--orange); }
+.copy-btn svg { width:13px; height:13px; }
+.copy-btn .ic-check-el { display:none; }
+.copy-btn.is-copied { color:#4ade80; border-color:#4ade80; }
+.copy-btn.is-copied .ic-copy-el  { display:none; }
+.copy-btn.is-copied .ic-check-el { display:inline; }
+.contact__socials { display:flex; flex-wrap:wrap; gap:11px; }
+
+/* ════════════════════════════════════════════════════════════
+   FOOTER
+   ════════════════════════════════════════════════════════════ */
+.footer {
+  padding:22px 0 max(38px,env(safe-area-inset-bottom));
+  border-top:1px solid var(--hair);
+  position:relative; z-index:1;
+}
+.footer__inner {
+  display:flex; justify-content:space-between; flex-wrap:wrap;
+  gap:8px; color:var(--muted); font-size:.8rem;
+}
+.footer__top {
+  display:flex; align-items:center; gap:7px;
+  text-decoration:none; color:var(--orange); font-size:.8rem;
+  transition:color .2s;
+}
+.footer__top:hover { color:var(--lo); }
+.footer__top svg { width:14px; height:14px; }
+
+/* ════════════════════════════════════════════════════════════
+   REDUCED MOTION (global)
+   ════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  .ticker__track { animation:none; }
+  .btn,.copy-btn,.recog__card { transition:none !important; }
+}
+</style>
+</head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Anjum</div>
-            <button class="menu-toggle" id="menuToggle">☰</button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="#resume" class="nav-link resume-btn" id="resumeBtn">Resume</a></li>
-            </ul>
-        </div>
+<a class="skip" href="#home">Skip to content</a>
+
+<!-- ──────────────────────────────────────────────
+     BACKGROUND LAYERS
+────────────────────────────────────────────── -->
+<div class="bg-layers" aria-hidden="true">
+  <!-- Layer 2: corner light bands only — centre stays dark -->
+  <div class="bg-gradients"></div>
+  <!-- Layer 3: explicit-circle speckle tiles — on top of gradients -->
+  <div class="bg-stars"></div>
+</div>
+
+<!-- ──────────────────────────────────────────────
+     HEADER
+────────────────────────────────────────────── -->
+<header class="hdr" id="site-hdr">
+  <div class="wrap hdr__inner">
+    <a href="#home" class="hdr__logo" aria-label="Shaik Anjum — home">Shaik Anjum</a>
+
+    <nav class="hdr__nav" aria-label="Primary navigation" id="hdr-nav">
+      <a href="#about"      class="nav-link">About</a>
+      <a href="#projects"   class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#skills"     class="nav-link">Skills</a>
+      <a href="#contact"    class="nav-link">Contact</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-wrapper">
-                <div class="hero-text">
-                    <h1 class="hero-title">Shaik Anjum</h1>
-                    <p class="hero-subtitle">Feature-Driven Software Developer | Automation Enthusiast</p>
-                    <p class="hero-desc">Passionate B.Tech student dedicated to continuous learning and problem-solving
-                        through hands-on experience in software development and automation.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/Anjum1104" target="_blank" class="social-icon">GitHub</a>
-                        <a href="mailto:shaiklaharaanjum@gmail.com" class="social-icon">Email</a>
-                    </div>
-                </div>
-            </div>
+    <a href="#contact" class="btn btn--orange hdr__cta" aria-label="Get in touch">
+      Get in touch
+      <span class="btn__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg>
+      </span>
+    </a>
+  </div>
+</header>
+
+<!-- ──────────────────────────────────────────────
+     MAIN
+────────────────────────────────────────────── -->
+<main class="main" id="home">
+
+  <!-- ▸ HERO ──────────────────────────────── -->
+  <section class="hero" aria-label="Introduction">
+
+    <div class="hero__name-wrap">
+      <p class="hero__hi">Hi, I am</p>
+      <h1 class="hero__name" aria-label="Shaik Anjum">Shaik Anjum</h1>
+    </div>
+
+    <!-- Portrait slot — set display:block on .hero__portrait in CSS and add your photo src -->
+    <div class="hero__portrait" aria-hidden="true">
+      <img src="photo.jpg" alt="" role="presentation"/>
+    </div>
+
+    <div class="hero__bottom">
+      <div class="hero__left">
+        <span class="hero__sparkle-tag">
+          <svg aria-hidden="true"><use href="#ic-sparkle"/></svg>
+          B.Tech CSE · Data Science · Class of 2027
+        </span>
+        <p class="hero__tagline">Machine learning that sees, classifies and decides.</p>
+        <div class="hero__btns">
+          <a href="#contact" class="btn btn--orange">
+            Get in touch
+            <span class="btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg>
+            </span>
+          </a>
+          <a href="#projects" class="hero__viewlink">
+            View my work
+            <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-arrow-se"/></svg>
+          </a>
         </div>
-    </section>
+      </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>Passionate and motivated B.Tech student seeking an internship opportunity to apply and enhance
-                    software development and automation skills in a real-world environment. I am dedicated to continuous
-                    learning and problem-solving through hands-on experience.</p>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>5</h3>
-                        <p>Projects</p>
-                    </div>
-                    <div class="stat">
-                        <h3>94%+</h3>
-                        <p>Academic Score</p>
-                    </div>
-                    <div class="stat">
-                        <h3>15+</h3>
-                        <p>Tech Skills</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Glass card -->
+      <aside class="hero__card" aria-label="Quick facts">
+        <div class="hero__card__top">
+          <div>
+            <div class="hero__cgpa">8.35 <small>CGPA</small></div>
+          </div>
+          <div class="hero__card__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg>
+          </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming & Logic</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C Programming</span>
-                        <span class="skill-tag">Data Structures</span>
-                        <span class="skill-tag">Python (Basic)</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">REST API</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Data & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">DBMS</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Data Science</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">GitHub</span>
-                    </div>
-                </div>
-            </div>
+        <p>B.Tech CSE (Data Science) at G. Pulla Reddy Engineering College, Kurnool — and 1st&nbsp;place at Outsyslayer Hackathon 2025.</p>
+        <div class="hero__chips">
+          <span class="chip">AI / ML</span>
+          <span class="chip">SegFormer-B2</span>
         </div>
-    </section>
+      </aside>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+  <!-- ▸ TICKER ─────────────────────────────── -->
+  <div class="ticker" aria-label="Highlights" role="marquee" aria-live="off">
+    <div class="ticker__track" aria-hidden="true">
+      <!-- list repeated twice for seamless loop -->
+      <span class="ticker__item">AI / ML Intern</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <span class="ticker__item">1st Place Hackathon 2025</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <span class="ticker__item">CGPA 8.35</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <span class="ticker__item">Python · OpenCV · Scikit-learn</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <span class="ticker__item">SegFormer-B2</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <!-- duplicate -->
+      <span class="ticker__item">AI / ML Intern</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <span class="ticker__item">1st Place Hackathon 2025</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <span class="ticker__item">CGPA 8.35</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <span class="ticker__item">Python · OpenCV · Scikit-learn</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+      <span class="ticker__item">SegFormer-B2</span>
+      <span class="ticker__item"><svg class="ticker__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg></span>
+    </div>
+  </div>
 
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web App</button>
-                <button class="filter-btn" data-filter="ml">ML/Data</button>
-            </div>
+  <!-- ▸ ABOUT ──────────────────────────────── -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="wrap">
 
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" data-category="web">
-                    <div class="project-header">
-                        <h3>Voice To-Do App</h3>
-                        <div class="project-icons">
-                            <a href="https://github.com/Anjum1104/voice_todo_app" target="_blank" class="project-icon"
-                                title="GitHub">🔗</a>
-                        </div>
-                    </div>
-                    <p class="project-desc">Productivity web application allowing users to create tasks using voice
-                        commands. Integrates speech-to-text for hands-free management.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Speech-to-Text</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Accessibility</span>
-                    </div>
-                </div>
+      <!-- decorative 12-column bars -->
+      <div class="about__columns" aria-hidden="true">
+        <div class="about__col"></div><div class="about__col"></div>
+        <div class="about__col"></div><div class="about__col"></div>
+        <div class="about__col"></div><div class="about__col"></div>
+        <div class="about__col"></div><div class="about__col"></div>
+        <div class="about__col"></div><div class="about__col"></div>
+        <div class="about__col"></div><div class="about__col"></div>
+      </div>
 
-                <!-- Project 2 -->
-                <div class="project-card" data-category="ml">
-                    <div class="project-header">
-                        <h3>Titanic Survival Prediction</h3>
-                        <div class="project-icons">
-                            <a href="https://github.com/Anjum1104/titanic-survival-predictions" target="_blank"
-                                class="project-icon" title="GitHub">🔗</a>
-                        </div>
-                    </div>
-                    <p class="project-desc">Machine Learning model predicting passenger survival based on age, gender,
-                        ticket class, and fare using classification algorithms.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">ML</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Data Science</span>
-                    </div>
-                </div>
+      <!-- Section label row -->
+      <div class="section-head" aria-hidden="true">
+        <svg class="section-head__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg>
+        <span class="section-head__label">About</span>
+        <span class="section-head__line"></span>
+      </div>
+      <h2 class="section-title" id="about-heading">Who I am</h2>
 
-                <!-- Project 3 -->
-                <div class="project-card" data-category="web">
-                    <div class="project-header">
-                        <h3>Content Scraping & Enhancement</h3>
-                        <div class="project-icons">
-                            <a href="https://github.com/Anjum1104/BeyondChats_Scraping_Content_Enhancement"
-                                target="_blank" class="project-icon" title="GitHub">🔗</a>
-                        </div>
-                    </div>
-                    <p class="project-desc">Full-stack app that scrapes web content, processes it, and enhances
-                        extracted data for usability and analysis.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Scraping</span>
-                        <span class="tech-badge">Backend Processing</span>
-                        <span class="tech-badge">Data Enhancement</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card" data-category="web">
-                    <div class="project-header">
-                        <h3>Live Clock (IST)</h3>
-                        <div class="project-icons">
-                            <a href="https://github.com/Anjum1104/clock" target="_blank" class="project-icon"
-                                title="GitHub">🔗</a>
-                        </div>
-                    </div>
-                    <p class="project-desc">Elegant real-time clock displaying Indian Standard Time (IST) with dual
-                        analog/digital faces in a glassmorphic interface.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">UI/UX</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Glassmorphism</span>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card" data-category="web">
-                    <div class="project-header">
-                        <h3>Budget Tracker</h3>
-                        <div class="project-icons">
-                            <a href="https://github.com/Anjum1104/budget_tracker" target="_blank" class="project-icon"
-                                title="GitHub">🔗</a>
-                        </div>
-                    </div>
-                    <p class="project-desc">PHP-based finance tool to track income, expenses, and savings with
-                        categorization and spending monitoring.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">Finance</span>
-                        <span class="tech-badge">Web</span>
-                    </div>
-                </div>
-            </div>
+      <!-- Top row: circle arrow + right description -->
+      <div class="about__toprow">
+        <div class="about__toprow__left">
+          <div class="about__circle-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg>
+          </div>
+          <span class="about__circle-label">About</span>
         </div>
-    </section>
+        <p class="about__toprow__right">
+          From <strong>Kurnool, Andhra Pradesh</strong> — building intelligent systems at the intersection of computer vision, machine learning and real-world impact.
+        </p>
+      </div>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">2027</div>
-                    <div class="timeline-content">
-                        <h3>B.Tech, Computer Science & Engineering</h3>
-                        <p class="institution">G Pulla Reddy Engineering College</p>
-                        <p class="details">Current Percentage: 7.98% | 2023 - 2027</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">2023</div>
-                    <div class="timeline-content">
-                        <h3>Senior Secondary (XII), Science</h3>
-                        <p class="institution">Oxford Vit Academy (BIEAP)</p>
-                        <p class="details">Percentage: 94.80%</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">2021</div>
-                    <div class="timeline-content">
-                        <h3>Secondary (X)</h3>
-                        <p class="institution">D A V High School (SSC)</p>
-                        <p class="details">CGPA: 10.00/10</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Content grid -->
+      <div class="about__grid">
+        <div class="about__side">
+          <p class="about__side__label">About me</p>
         </div>
-    </section>
-
-    <!-- Trainings Section -->
-    <section id="trainings" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Trainings & Certifications</h2>
-            <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-icon">🚀</div>
-                    <h3>Entrepreneurship</h3>
-                    <p class="cert-issuer">NPTEL, Online</p>
-                    <p class="cert-desc">Sep 2025 - Nov 2025</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon">🤝</div>
-                    <h3>Community Service</h3>
-                    <p class="cert-issuer">Volunteer</p>
-                    <p class="cert-desc">Improved students' understanding of education system and modern learning
-                        skills.</p>
-                </div>
-            </div>
+        <div class="about__main">
+          <p class="about__para">
+            I'm Shaik Anjum, a B.Tech student in Computer Science (Data Science) at G. Pulla Reddy Engineering College, Kurnool, driven by a passion for building ML systems that genuinely solve real problems.
+          </p>
+          <p class="about__desc">
+            During my <strong>AI/ML internship at InternPe</strong> I built classification and regression models end-to-end — raw data ingestion, preprocessing, model optimisation and evaluation — using <strong>Scikit-learn, Pandas and NumPy</strong>. My hackathon project FalconSeg used a <strong>SegFormer-B2</strong> architecture to segment desert terrain and took <strong>1st place</strong> at Outsyslayer Hackathon, Byond Campuz 2025.
+          </p>
+          <p class="about__desc" style="margin-top:14px;">
+            I'm equally comfortable reasoning about <strong>computer vision pipelines</strong> — I built a real-time driver fatigue detection system using OpenCV and facial landmark analysis — and translating data insights into compelling visuals with <strong>Power BI</strong>. I'm based in Kurnool and open to internships and collaborative ML projects.
+          </p>
+          <div class="about__btns">
+            <a href="#projects" class="btn btn--orange">
+              See my work
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg>
+              </span>
+            </a>
+            <a href="#contact" class="btn btn--outline">Get in touch</a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <div>
-                            <h3>Email</h3>
-                            <a href="mailto:shaiklaharaanjum@gmail.com">shaiklaharaanjum@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <div>
-                            <h3>Phone</h3>
-                            <a href="tel:+916281132793">+91 6281132793</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Kurnool, Andhra Pradesh</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+    </div>
+  </section>
+
+  <!-- ▸ PROJECTS ───────────────────────────── -->
+  <section class="section" id="projects" aria-labelledby="projects-heading">
+    <div class="wrap">
+
+      <div class="section-head" aria-hidden="true">
+        <svg class="section-head__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg>
+        <span class="section-head__label">Projects</span>
+        <span class="section-head__line"></span>
+      </div>
+      <h2 class="section-title" id="projects-heading">What I've built</h2>
+
+      <!-- Featured case study: Driver Fatigue Detection -->
+      <article class="panel projects__featured" aria-labelledby="proj1-title">
+        <div class="case">
+          <div class="case__tags">
+            <span class="chip">Python</span>
+            <span class="chip">OpenCV</span>
+            <span class="chip">Facial Landmarks</span>
+            <span class="chip">Real-time</span>
+            <span class="chip">Computer Vision</span>
+          </div>
+          <h3 class="case__title" id="proj1-title">Vision-Based Driver Fatigue<br>Detection &amp; Instant Alert System</h3>
+          <p class="case__summary">
+            A real-time webcam pipeline that monitors Eye Aspect Ratio and mouth aperture to detect drowsiness and yawning, triggering escalating audio alerts and a simulated safe-stop after 45 seconds of driver unresponsiveness.
+          </p>
+
+          <!-- 6-step pipeline -->
+          <div class="pipeline" role="list" aria-label="Processing pipeline">
+            <div class="pipe-step" role="listitem">
+              <p class="pipe-step__n">Step 01</p>
+              <p class="pipe-step__title">Capture</p>
+              <p class="pipe-step__desc">Live webcam frame acquisition at real-time frame rates</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Shaik Anjum. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="https://github.com/Anjum1104" target="_blank">GitHub</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#home">Back to Top</a>
-                </div>
+            <div class="pipe-step" role="listitem">
+              <p class="pipe-step__n">Step 02</p>
+              <p class="pipe-step__title">Landmarks</p>
+              <p class="pipe-step__desc">Facial landmark detection via dlib / MediaPipe 68-point model</p>
             </div>
-        </div>
-    </footer>
+            <div class="pipe-step" role="listitem">
+              <p class="pipe-step__n">Step 03</p>
+              <p class="pipe-step__title">Features</p>
+              <p class="pipe-step__desc">Eye Aspect Ratio (EAR) and mouth aperture ratio computed per frame</p>
+            </div>
+            <div class="pipe-step" role="listitem">
+              <p class="pipe-step__n">Step 04</p>
+              <p class="pipe-step__title">Assessment</p>
+              <p class="pipe-step__desc">Threshold comparison with configurable sensitivity; consecutive-frame counters</p>
+            </div>
+            <div class="pipe-step" role="listitem">
+              <p class="pipe-step__n">Step 05</p>
+              <p class="pipe-step__title">Alerts</p>
+              <p class="pipe-step__desc">Multi-stage audio beep escalation; on-screen overlay warnings</p>
+            </div>
+            <div class="pipe-step" role="listitem">
+              <p class="pipe-step__n">Step 06</p>
+              <p class="pipe-step__title">Fail-safe</p>
+              <p class="pipe-step__desc">Simulated parking protocol triggered after 45 s of unresponsiveness</p>
+            </div>
+          </div>
 
-    <script src="script.js"></script>
+          <!-- Sub-panels -->
+          <div class="case__panels">
+            <!-- Detection signals -->
+            <div class="case-panel">
+              <h4>Detection signals</h4>
+              <div class="ear-formula" aria-label="Eye Aspect Ratio formula">
+                EAR =
+                <span class="ear__frac">
+                  <span class="ear__num">‖p2−p6‖ + ‖p3−p5‖</span>
+                  <span class="ear__den">2 · ‖p1−p4‖</span>
+                </span>
+              </div>
+              <p style="margin-bottom:10px;">EAR drops sharply when the eye closes. Sustained EAR below threshold for N consecutive frames triggers a drowsiness event.</p>
+              <p>Mouth aperture ratio uses the same landmark geometry to detect yawn events independently of eye state.</p>
+            </div>
+            <!-- Driver response -->
+            <div class="case-panel">
+              <h4>Driver response</h4>
+              <ul class="resp-list">
+                <li>
+                  <span class="resp-label">Stage 1</span>
+                  <span>Single beep — short drowsiness or first yawn detected</span>
+                </li>
+                <li>
+                  <span class="resp-label">Stage 2</span>
+                  <span>Repeated rapid beeps — sustained closure beyond threshold</span>
+                </li>
+                <li>
+                  <span class="resp-label">Stage 3</span>
+                  <span>Continuous alarm — critical fatigue, unresponsive driver</span>
+                </li>
+                <li>
+                  <span class="resp-label">Fail-safe</span>
+                  <span>Simulated safe parking after 45 s without driver response</span>
+                </li>
+              </ul>
+            </div>
+            <!-- At a glance -->
+            <div class="case-panel">
+              <h4>At a glance</h4>
+              <ul class="spec-list">
+                <li>
+                  <span class="spec-key">Input</span>
+                  <span>Live webcam stream</span>
+                </li>
+                <li>
+                  <span class="spec-key">Method</span>
+                  <span>Geometric landmark ratios</span>
+                </li>
+                <li>
+                  <span class="spec-key">Mode</span>
+                  <span>Real-time inference</span>
+                </li>
+                <li>
+                  <span class="spec-key">Stack</span>
+                  <span>Python, OpenCV, dlib / MediaPipe, playsound</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Two smaller panels -->
+      <div class="proj-row">
+
+        <!-- FalconSeg -->
+        <article class="panel proj" aria-labelledby="proj2-title">
+          <div class="proj__badge">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-trophy"/></svg>
+            1st Place — Outsyslayer Hackathon
+          </div>
+          <h3 class="proj__title" id="proj2-title">FalconSeg</h3>
+          <p class="proj__desc">Desert terrain segmentation model that won first place at the Outsyslayer Hackathon, Byond Campuz 2025.</p>
+          <ul class="proj__bullets" aria-label="Project highlights">
+            <li>
+              <svg class="dia" aria-hidden="true"><use href="#ic-diamond"/></svg>
+              <span>Fine-tuned <strong>SegFormer-B2</strong> transformer architecture on desert terrain imagery</span>
+            </li>
+            <li>
+              <svg class="dia" aria-hidden="true"><use href="#ic-diamond"/></svg>
+              <span>Pixel-wise semantic segmentation of arid landscape features</span>
+            </li>
+            <li>
+              <svg class="dia" aria-hidden="true"><use href="#ic-diamond"/></svg>
+              <span>Competed and placed <strong>1st</strong> at the 2025 Byond Campuz hackathon</span>
+            </li>
+            <li>
+              <svg class="dia" aria-hidden="true"><use href="#ic-diamond"/></svg>
+              <span>Applied modern vision transformer methodology to an underexplored domain</span>
+            </li>
+          </ul>
+          <div class="proj__chips">
+            <span class="chip">SegFormer-B2</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">Semantic Segmentation</span>
+          </div>
+          <!-- Repo link placeholder -->
+          <!-- <a href="https://github.com/YOUR_HANDLE/falconseg" class="proj__link" target="_blank" rel="noopener">
+            View repository <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg>
+          </a> -->
+        </article>
+
+        <!-- Titanic Survival Predictions -->
+        <article class="panel proj" aria-labelledby="proj3-title">
+          <div class="proj__badge">Sep – Dec 2025</div>
+          <h3 class="proj__title" id="proj3-title">Titanic Survival Predictions</h3>
+          <p class="proj__desc">Classic but rigorous end-to-end ML pipeline applying structured data techniques to the Titanic survival dataset.</p>
+          <ul class="proj__bullets" aria-label="Project highlights">
+            <li>
+              <svg class="dia" aria-hidden="true"><use href="#ic-diamond"/></svg>
+              <span>Full <strong>EDA</strong> — missing value analysis, feature distributions, correlation mapping</span>
+            </li>
+            <li>
+              <svg class="dia" aria-hidden="true"><use href="#ic-diamond"/></svg>
+              <span>Feature engineering: age bucketing, family size, title extraction</span>
+            </li>
+            <li>
+              <svg class="dia" aria-hidden="true"><use href="#ic-diamond"/></svg>
+              <span>Compared Logistic Regression, Random Forest and Gradient Boosting</span>
+            </li>
+            <li>
+              <svg class="dia" aria-hidden="true"><use href="#ic-diamond"/></svg>
+              <span>Cross-validation and hyperparameter tuning with GridSearchCV</span>
+            </li>
+          </ul>
+          <div class="proj__chips">
+            <span class="chip">Python</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">Scikit-learn</span>
+            <span class="chip">EDA</span>
+          </div>
+          <!-- Repo link placeholder -->
+          <!-- <a href="https://github.com/YOUR_HANDLE/titanic" class="proj__link" target="_blank" rel="noopener">
+            View repository <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-arrow-ne"/></svg>
+          </a> -->
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ▸ EXPERIENCE & EDUCATION ────────────── -->
+  <section class="section" id="experience" aria-labelledby="exp-heading">
+    <div class="wrap">
+
+      <div class="section-head" aria-hidden="true">
+        <svg class="section-head__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg>
+        <span class="section-head__label">Experience &amp; Education</span>
+        <span class="section-head__line"></span>
+      </div>
+      <h2 class="section-title" id="exp-heading">My journey</h2>
+
+      <div class="exp__grid">
+
+        <!-- Experience -->
+        <div class="panel tl-panel">
+          <p class="tl-panel__h">Work Experience</p>
+          <div class="tl">
+            <div class="tl__item">
+              <div class="tl__diamond" aria-hidden="true"></div>
+              <p class="tl__date">May – Jun 2026</p>
+              <div class="tl__card panel">
+                <p class="tl__title">AI / ML Intern</p>
+                <p class="tl__org">InternPe</p>
+                <p class="tl__desc">
+                  Built classification and regression models end-to-end using Scikit-learn, Pandas and NumPy. Responsibilities spanned raw data ingestion, exploratory data analysis, feature engineering, model optimisation, and evaluation reporting.
+                </p>
+                <span class="tl__pill">Scikit-learn · Pandas · NumPy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="panel tl-panel">
+          <p class="tl-panel__h">Education</p>
+          <div class="tl">
+
+            <div class="tl__item">
+              <div class="tl__diamond" aria-hidden="true"></div>
+              <p class="tl__date">2023 – 2027</p>
+              <div class="tl__card panel">
+                <p class="tl__title">B.Tech CSE (Data Science)</p>
+                <p class="tl__org">G. Pulla Reddy Engineering College, Kurnool</p>
+                <p class="tl__desc">
+                  Pursuing a four-year undergraduate degree with a focus on machine learning, data science and software engineering principles.
+                </p>
+                <span class="tl__pill">CGPA 8.35 / 10</span>
+              </div>
+            </div>
+
+            <div class="tl__item">
+              <div class="tl__diamond" aria-hidden="true"></div>
+              <p class="tl__date">2023 · Class XII</p>
+              <div class="tl__card panel">
+                <p class="tl__title">Intermediate (MPC)</p>
+                <p class="tl__org">Oxford Vit Academy, Kurnool — BIEAP</p>
+                <span class="tl__pill">94.80 %</span>
+              </div>
+            </div>
+
+            <div class="tl__item">
+              <div class="tl__diamond" aria-hidden="true"></div>
+              <p class="tl__date">2021 · Class X</p>
+              <div class="tl__card panel">
+                <p class="tl__title">Secondary School</p>
+                <p class="tl__org">D.A.V High School</p>
+                <span class="tl__pill">CGPA 10.00 / 10</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ▸ SKILLS ─────────────────────────────── -->
+  <!-- ▸ SKILLS ─────────────────────────────── -->
+  <section class="section" id="skills" aria-labelledby="skills-heading">
+    <div class="wrap">
+      <div class="section-head" aria-hidden="true">
+        <svg class="section-head__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg>
+        <span class="section-head__label">Skills</span>
+        <span class="section-head__line"></span>
+      </div>
+      <h2 class="section-title" id="skills-heading">Technical skills</h2>
+    </div>
+
+    <!--
+      ROW 1 — LEFT TO RIGHT (translateX -50% → 0)
+      One copy of each item per set. Two sets (A + B) side by side = seamless loop.
+    -->
+    <div class="sk-row-wrap" aria-label="Programming and data skills">
+      <div class="sk-track sk-track--ltr">
+
+        <!-- SET A — real list, read by screen readers once -->
+        <ul class="sk-set" role="list">
+          <li class="sk-item" style="--brand:#4584B6" tabindex="0">
+            <img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/python/python-original.svg" alt="Python" loading="lazy"/>
+            <span class="sk-name">Python</span>
+          </li>
+          <li class="sk-item" style="--brand:#ED8B00" tabindex="0">
+            <img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/java/java-original.svg" alt="Java" loading="lazy"/>
+            <span class="sk-name">Java <span class="sk-basics">basics</span></span>
+          </li>
+          <li class="sk-item" style="--brand:#F80000" tabindex="0">
+            <img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/oracle/oracle-original.svg" alt="Oracle SQL" loading="lazy"/>
+            <span class="sk-name">Oracle SQL</span>
+          </li>
+          <!-- Pandas: #130754 → #fff (inlined for dark-bg legibility) -->
+          <li class="sk-item" style="--brand:#E70488" tabindex="0">
+            <svg class="sk-logo-svg" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-label="Pandas" role="img">
+              <path fill="#ffffff" d="M46.236 7.567h13.99v29.047h-13.99Zm0 59.668h13.99V96.28h-13.99Z"/>
+              <path fill="#ffca00" d="M46.236 45.092h13.99v13.705h-13.99Z"/>
+              <path fill="#ffffff" d="M23.763 31.446h13.989V128h-13.99ZM68.245 91.2h13.99v29.046h-13.99Zm0-59.72h13.99v29.047h-13.99Z"/>
+              <path fill="#e70488" d="M68.245 69.011h13.99v13.705h-13.99Z"/>
+              <path fill="#ffffff" d="M90.248 0h13.99v96.554h-13.99Z"/>
+            </svg>
+            <span class="sk-name">Pandas</span>
+          </li>
+          <li class="sk-item" style="--brand:#4DABCF" tabindex="0">
+            <img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/numpy/numpy-original.svg" alt="NumPy" loading="lazy"/>
+            <span class="sk-name">NumPy</span>
+          </li>
+          <li class="sk-item" style="--brand:#F89939" tabindex="0">
+            <img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" loading="lazy"/>
+            <span class="sk-name">Scikit-learn</span>
+          </li>
+          <!-- Power BI — text-only until powerbi.svg is added -->
+          <li class="sk-item" style="--brand:#F2C811" tabindex="0">
+            <!-- swap this span for: <img class="sk-logo-img" src="powerbi.svg" alt="Power BI" loading="lazy"/> -->
+            <span class="sk-powerbi-text">Power BI</span>
+            <span class="sk-name">Power BI</span>
+          </li>
+        </ul><!-- /set-A -->
+
+        <!-- SET B — exact clone, hidden from AT -->
+        <ul class="sk-set" aria-hidden="true" role="presentation">
+          <li class="sk-item" style="--brand:#4584B6"><img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/python/python-original.svg" alt="" loading="lazy"/><span class="sk-name">Python</span></li>
+          <li class="sk-item" style="--brand:#ED8B00"><img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/java/java-original.svg" alt="" loading="lazy"/><span class="sk-name">Java <span class="sk-basics">basics</span></span></li>
+          <li class="sk-item" style="--brand:#F80000"><img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/oracle/oracle-original.svg" alt="" loading="lazy"/><span class="sk-name">Oracle SQL</span></li>
+          <li class="sk-item" style="--brand:#E70488"><svg class="sk-logo-svg" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#ffffff" d="M46.236 7.567h13.99v29.047h-13.99Zm0 59.668h13.99V96.28h-13.99Z"/><path fill="#ffca00" d="M46.236 45.092h13.99v13.705h-13.99Z"/><path fill="#ffffff" d="M23.763 31.446h13.989V128h-13.99ZM68.245 91.2h13.99v29.046h-13.99Zm0-59.72h13.99v29.047h-13.99Z"/><path fill="#e70488" d="M68.245 69.011h13.99v13.705h-13.99Z"/><path fill="#ffffff" d="M90.248 0h13.99v96.554h-13.99Z"/></svg><span class="sk-name">Pandas</span></li>
+          <li class="sk-item" style="--brand:#4DABCF"><img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/numpy/numpy-original.svg" alt="" loading="lazy"/><span class="sk-name">NumPy</span></li>
+          <li class="sk-item" style="--brand:#F89939"><img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/scikitlearn/scikitlearn-original.svg" alt="" loading="lazy"/><span class="sk-name">Scikit-learn</span></li>
+          <li class="sk-item" style="--brand:#F2C811"><span class="sk-powerbi-text">Power BI</span><span class="sk-name">Power BI</span></li>
+        </ul><!-- /set-B -->
+
+      </div><!-- /.sk-track ltr -->
+    </div><!-- /.sk-row-wrap row1 -->
+
+    <!--
+      ROW 2 — RIGHT TO LEFT (translateX 0 → -50%)
+      One copy of each item per set. Two sets (A + B) side by side = seamless loop.
+    -->
+    <div class="sk-row-wrap" aria-label="AI, ML and engineering skills">
+      <div class="sk-track sk-track--rtl">
+
+        <!-- SET A — real list -->
+        <ul class="sk-set" role="list">
+          <li class="sk-item" style="--brand:#5C3EE8" tabindex="0">
+            <img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/opencv/opencv-original.svg" alt="OpenCV" loading="lazy"/>
+            <span class="sk-name">OpenCV</span>
+          </li>
+          <li class="sk-item" style="--brand:#7FC8FF" tabindex="0">
+            <img class="sk-logo-img" src="https://cdn.simpleicons.org/langchain/7FC8FF" alt="LangChain" loading="lazy"/>
+            <span class="sk-name">LangChain <span class="sk-basics">basics</span></span>
+          </li>
+          <li class="sk-item" style="--brand:#00758F" tabindex="0">
+            <svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="SQL" role="img">
+              <ellipse cx="30" cy="13" rx="20" ry="7" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M10 13v11c0 3.87 8.95 7 20 7s20-3.13 20-7V13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 24v11c0 3.87 8.95 7 20 7s20-3.13 20-7V24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="sk-name">SQL</span>
+          </li>
+          <li class="sk-item" style="--brand:#818CF8" tabindex="0">
+            <svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="OOP" role="img">
+              <rect x="4" y="4" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="36" y="4" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="4" y="36" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="36" y="36" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="24" y1="14" x2="36" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="14" y1="24" x2="14" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="46" y1="24" x2="46" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="24" y1="46" x2="36" y2="46" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="sk-name">OOP</span>
+          </li>
+          <li class="sk-item" style="--brand:#A855F7" tabindex="0">
+            <svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="Machine Learning" role="img">
+              <circle cx="30" cy="30" r="6" fill="currentColor"/>
+              <circle cx="8" cy="14" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="52" cy="14" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="8" cy="46" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="52" cy="46" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="13" y1="17" x2="25" y2="26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="47" y1="17" x2="35" y2="26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="13" y1="43" x2="25" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="47" y1="43" x2="35" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="sk-name">Machine Learning</span>
+          </li>
+          <li class="sk-item" style="--brand:#06B6D4" tabindex="0">
+            <svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="NLP" role="img">
+              <path d="M52 38a4 4 0 0 1-4 4H18l-10 10V10a4 4 0 0 1 4-4h36a4 4 0 0 1 4 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <line x1="16" y1="22" x2="44" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="16" y1="31" x2="32" y2="31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="sk-name">NLP</span>
+          </li>
+          <li class="sk-item" style="--brand:#F59E0B" tabindex="0">
+            <svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="Prompt Engineering" role="img">
+              <path d="M30 5 L34 24 L53 30 L34 36 L30 55 L26 36 L7 30 L26 24 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+            <span class="sk-name">Prompt Eng. <span class="sk-basics">basics</span></span>
+          </li>
+          <li class="sk-item" style="--brand:#34D399" tabindex="0">
+            <svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="Preprocessing" role="img">
+              <path d="M8 12h44L36 32v18l-12-6V32Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+            <span class="sk-name">Preprocessing</span>
+          </li>
+          <li class="sk-item" style="--brand:#22C55E" tabindex="0">
+            <svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="EDA" role="img">
+              <polyline points="4,30 12,30 20,10 28,50 36,20 44,40 52,30 56,30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="sk-name">EDA</span>
+          </li>
+          <li class="sk-item" style="--brand:#60A5FA" tabindex="0">
+            <svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="Data Visualisation" role="img">
+              <rect x="6"  y="34" width="11" height="18" rx="2" fill="currentColor" opacity=".7"/>
+              <rect x="21" y="22" width="11" height="30" rx="2" fill="currentColor" opacity=".85"/>
+              <rect x="36" y="10" width="11" height="42" rx="2" fill="currentColor"/>
+              <rect x="6"  y="54" width="46" height="2"  rx="1" fill="currentColor" opacity=".35"/>
+            </svg>
+            <span class="sk-name">Data Viz</span>
+          </li>
+        </ul><!-- /set-A -->
+
+        <!-- SET B — exact clone, hidden from AT -->
+        <ul class="sk-set" aria-hidden="true" role="presentation">
+          <li class="sk-item" style="--brand:#5C3EE8"><img class="sk-logo-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/opencv/opencv-original.svg" alt="" loading="lazy"/><span class="sk-name">OpenCV</span></li>
+          <li class="sk-item" style="--brand:#7FC8FF"><img class="sk-logo-img" src="https://cdn.simpleicons.org/langchain/7FC8FF" alt="" loading="lazy"/><span class="sk-name">LangChain <span class="sk-basics">basics</span></span></li>
+          <li class="sk-item" style="--brand:#00758F"><svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="30" cy="13" rx="20" ry="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 13v11c0 3.87 8.95 7 20 7s20-3.13 20-7V13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M10 24v11c0 3.87 8.95 7 20 7s20-3.13 20-7V24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="sk-name">SQL</span></li>
+          <li class="sk-item" style="--brand:#818CF8"><svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="4" y="4" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="36" y="4" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="36" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="36" y="36" width="20" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><line x1="24" y1="14" x2="36" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="14" y1="24" x2="14" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="46" y1="24" x2="46" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="24" y1="46" x2="36" y2="46" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="sk-name">OOP</span></li>
+          <li class="sk-item" style="--brand:#A855F7"><svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="30" cy="30" r="6" fill="currentColor"/><circle cx="8" cy="14" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="52" cy="14" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="46" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="52" cy="46" r="5" fill="none" stroke="currentColor" stroke-width="2"/><line x1="13" y1="17" x2="25" y2="26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="47" y1="17" x2="35" y2="26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="13" y1="43" x2="25" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="47" y1="43" x2="35" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="sk-name">Machine Learning</span></li>
+          <li class="sk-item" style="--brand:#06B6D4"><svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M52 38a4 4 0 0 1-4 4H18l-10 10V10a4 4 0 0 1 4-4h36a4 4 0 0 1 4 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><line x1="16" y1="22" x2="44" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="31" x2="32" y2="31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="sk-name">NLP</span></li>
+          <li class="sk-item" style="--brand:#F59E0B"><svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M30 5 L34 24 L53 30 L34 36 L30 55 L26 36 L7 30 L26 24 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="sk-name">Prompt Eng. <span class="sk-basics">basics</span></span></li>
+          <li class="sk-item" style="--brand:#34D399"><svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 12h44L36 32v18l-12-6V32Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="sk-name">Preprocessing</span></li>
+          <li class="sk-item" style="--brand:#22C55E"><svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polyline points="4,30 12,30 20,10 28,50 36,20 44,40 52,30 56,30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sk-name">EDA</span></li>
+          <li class="sk-item" style="--brand:#60A5FA"><svg class="sk-ico" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="6" y="34" width="11" height="18" rx="2" fill="currentColor" opacity=".7"/><rect x="21" y="22" width="11" height="30" rx="2" fill="currentColor" opacity=".85"/><rect x="36" y="10" width="11" height="42" rx="2" fill="currentColor"/><rect x="6" y="54" width="46" height="2" rx="1" fill="currentColor" opacity=".35"/></svg><span class="sk-name">Data Viz</span></li>
+        </ul><!-- /set-B -->
+
+      </div><!-- /.sk-track rtl -->
+    </div><!-- /.sk-row-wrap row2 -->
+
+    <div class="wrap">
+      <p class="sk-working">Working style: problem-solving, teamwork, leadership, communication.</p>
+    </div>
+
+
+  </section>
+
+  <!-- ▸ RECOGNITION ────────────────────────── -->
+  <section class="section" id="recognition" aria-labelledby="recog-heading">
+    <div class="wrap">
+
+      <div class="section-head" aria-hidden="true">
+        <svg class="section-head__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg>
+        <span class="section-head__label">Recognition</span>
+        <span class="section-head__line"></span>
+      </div>
+      <h2 class="section-title" id="recog-heading">Awards &amp; activities</h2>
+
+      <div class="recog__grid">
+
+        <article class="panel recog__card">
+          <div class="recog__ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><use href="#ic-trophy"/></svg>
+          </div>
+          <h4>1st Place — Outsyslayer Hackathon</h4>
+          <p>Byond Campuz 2025 · FalconSeg: desert terrain semantic segmentation using SegFormer-B2, winning first place in a competitive ML hackathon.</p>
+        </article>
+
+        <article class="panel recog__card">
+          <div class="recog__ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><use href="#ic-code"/></svg>
+          </div>
+          <h4>Vibe Coding Competition 2025</h4>
+          <p>Recognised as a Full Stack Developer in an industry coding competition — demonstrating breadth across both front-end and back-end development.</p>
+        </article>
+
+        <article class="panel recog__card">
+          <div class="recog__ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><use href="#ic-heart"/></svg>
+          </div>
+          <h4>Community Service Program</h4>
+          <p>School outreach initiative — contributing to educational programs and community engagement activities, reflecting a commitment to impact beyond engineering.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ▸ CONTACT ─────────────────────────────── -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="wrap">
+
+      <div class="section-head" aria-hidden="true">
+        <svg class="section-head__sp" aria-hidden="true"><use href="#ic-sparkle"/></svg>
+        <span class="section-head__label">Contact</span>
+        <span class="section-head__line"></span>
+      </div>
+
+      <h2 class="contact__headline" id="contact-heading">
+        Have a project, internship or
+        <span class="grad-text">ML problem</span>
+        in mind?
+      </h2>
+
+      <div class="panel contact__card">
+
+        <ul class="contact__list" aria-label="Contact details">
+
+          <li class="contact__row">
+            <span class="contact__k">Email</span>
+            <span class="contact__v">shaiklaharaanjum@gmail.com</span>
+            <button
+              class="copy-btn"
+              data-copy="shaiklaharaanjum@gmail.com"
+              aria-label="Copy email address">
+              <svg class="ic-copy-el" aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-copy"/></svg>
+              <svg class="ic-check-el" aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-check"/></svg>
+              Copy
+            </button>
+          </li>
+
+          <li class="contact__row">
+            <span class="contact__k">Phone</span>
+            <span class="contact__v">+91 6281132793</span>
+            <button
+              class="copy-btn"
+              data-copy="+916281132793"
+              aria-label="Copy phone number">
+              <svg class="ic-copy-el" aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-copy"/></svg>
+              <svg class="ic-check-el" aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-check"/></svg>
+              Copy
+            </button>
+          </li>
+
+          <li class="contact__row">
+            <span class="contact__k">Location</span>
+            <span class="contact__v">Kurnool, Andhra Pradesh, India</span>
+          </li>
+
+        </ul>
+
+        <div class="contact__socials">
+          <!-- Replace # with real URLs -->
+          <a href="#"
+             class="btn btn--outline"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="GitHub profile (opens in new tab)">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><use href="#ic-github"/></svg>
+            GitHub
+          </a>
+          <a href="#"
+             class="btn btn--outline"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="LinkedIn profile (opens in new tab)">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><use href="#ic-linkedin"/></svg>
+            LinkedIn
+          </a>
+          <!-- Resume download placeholder -->
+          <!-- <a href="resume.pdf" class="btn btn--orange" download aria-label="Download resume PDF">
+            Download Resume
+            <span class="btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><use href="#ic-arrow-se"/></svg>
+            </span>
+          </a> -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ──────────────────────────────────────────────
+     FOOTER
+────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span>© 2026 Shaik Anjum. All rights reserved.</span>
+    <a href="#home" class="footer__top" aria-label="Back to top">
+      Back to top
+      <svg aria-hidden="true" viewBox="0 0 24 24"><use href="#ic-arrow-up"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- ──────────────────────────────────────────────
+     MINIMAL VANILLA JS
+     — copy buttons
+     — nav active highlighting by scroll position
+────────────────────────────────────────────── -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Copy buttons ────────────────────────── */
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      if (!text) return;
+      navigator.clipboard.writeText(text).then(function () {
+        btn.classList.add('is-copied');
+        var copyLabel = btn.querySelector('.ic-copy-el');
+        if (copyLabel) copyLabel.style.display = 'none';
+        setTimeout(function () {
+          btn.classList.remove('is-copied');
+          if (copyLabel) copyLabel.style.display = '';
+        }, 2000);
+      }).catch(function () {
+        /* fallback for browsers without clipboard API */
+        try {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.cssText = 'position:fixed;opacity:0;pointer-events:none';
+          document.body.appendChild(ta);
+          ta.focus(); ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          btn.classList.add('is-copied');
+          setTimeout(function () { btn.classList.remove('is-copied'); }, 2000);
+        } catch (e) {}
+      });
+    });
+  });
+
+  /* ── Nav active highlighting by scroll ───── */
+  var navLinks = document.querySelectorAll('.hdr__nav .nav-link');
+  var sections = [];
+  navLinks.forEach(function (link) {
+    var id = link.getAttribute('href').replace('#', '');
+    var el = document.getElementById(id);
+    if (el) sections.push({ el: el, link: link });
+  });
+
+  function updateNav () {
+    var scrollY = window.scrollY || window.pageYOffset;
+    var winH    = window.innerHeight;
+    var active  = null;
+
+    sections.forEach(function (s) {
+      var rect = s.el.getBoundingClientRect();
+      var top  = rect.top + scrollY;
+      if (scrollY + winH * 0.3 >= top) active = s;
+    });
+
+    navLinks.forEach(function (l) { l.classList.remove('is-active'); });
+    if (active) active.link.classList.add('is-active');
+  }
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      requestAnimationFrame(function () { updateNav(); ticking = false; });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  updateNav();
+})();
+</script>
+
 </body>
-
 </html>
